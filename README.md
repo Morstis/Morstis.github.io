@@ -1,3 +1,5 @@
 My home configuration
 
-Strongly inspired by https://github.com/elenapan/dotfiles
+Themed with Catppuccin Theme: https://github.com/catppuccin/catppuccin
+
+See it working here: https://morstis.github.io/
