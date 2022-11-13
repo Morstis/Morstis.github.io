@@ -1,91 +1,199 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="clock"></div>
-      <div id="welcome">Willkommen Lucas</div>
-      <input
-        type="text"
-        name=""
-        id="search"
-        onkeypress="return search(event)"
-        placeholder="google..."
-        autofocus
-      />
-      <div id="boxes">
-        <div>
-          <div>daily</div>
-          <a href="https://www.youtube.com/">Youtube</a>
-          <a href="https://www.netflix.com/browse">Netflix</a>
-          <a href="https://hag-iserv.de/iserv/">Iserv</a>
-        </div>
-        <div>
-          <div>reddit</div>
-          <a href="https://www.reddit.com/r/unixporn">r/unixporn</a>
-          <a href="https://www.reddit.com/r/ProgrammerHumor"
-            >r/programmerHumor</a
-          >
-          <a href="https://www.reddit.com/r/unixporn">r/unixporn</a>
-        </div>
-        <div>
-          <div>dev</div>
-          <a href="https://console.firebase.google.com/?pli=1">Firebase</a>
-          <a href="https://github.com/Morstis">Github</a>
-          <a href="https://material.angular.io/">Angular Material</a>
-          <a href="https://material.io/resources/icons/">Material Icons</a>
-          <a href="https://ionicframework.com/docs">Ionic</a>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+  <main>
+    <div id="clock"></div>
+    <div id="welcome" class="item">
+      <h1>
+        Willkommen Lucas
+      </h1>
     </div>
+    <section>
+      <div class="item">
+        <h1>Arbeit</h1>
 
-    <script>
-      // Get current time and format
+        <div class="row2">
+          <div class="left list">
+            <div class="iconWithText">
+              <img src="/assets/tabler_server-2.svg">
+              <a href="">localhost:4200</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/tabler_server-2.svg">
+              <a href="">localhost:4300</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/tabler_server-2.svg">
+              <a href="">localhost:300</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/simple-icons_hasura.svg">
+              <a href="">Hasura - Cloud</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/simple-icons_hasura.svg">
+              <a href="">Hasura - Local</a>
+            </div>
+          </div>
+          <div class="right list">
+            <div class="iconWithText">
+              <img src="/assets/mdi_google.svg">
+              <a href="">Google Cloud</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/simple-icons_portainer.svg">
+              <a href="">Portainer</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/mdi_material-design.svg">
+              <a href="">Material Icons</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/tabler_brand-firebase.svg">
+              <a href="">Firebase</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/mdi_google-drive.svg">
+              <a href="">Google Drive</a>
+            </div>
+          </div>
+        </div>
 
-      function getTime() {
-        let date = new Date(),
-          min = date.getMinutes(),
-          sec = date.getSeconds(),
-          hour = date.getHours();
 
-        return (
-          "" +
-          (hour < 10 ? "0" + hour : hour) +
-          ":" +
-          (min < 10 ? "0" + min : min) +
-          ":" +
-          (sec < 10 ? "0" + sec : sec)
-        );
-      }
+      </div>
+      <div class="item">
+        <h1>Studium</h1>
+        <div class="row2">
 
-      function search(event) {
-        if (event.code === "Enter") {
-          window.open(
-            "https://www.google.com/search?q=" +
-              document.getElementById("search").value,
-            "_blank"
-          );
-        }
-      }
+          <div class="left list">
+            <div class="iconWithText">
+              <img src="/assets/mdi_account-student.svg">
+              <a href="">Ilias</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/bxs_school.svg">
+              <a href="">Campus</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/mdi_test-tube.svg">
+              <a href="">Artimis</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/material-symbols_local-library-outline-rounded.svg">
+              <a href="">Bibliothek</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/material-symbols_local-bar-outline-rounded.svg">
+              <a href="">z10</a>
+            </div>
+          </div>
+          <div class="right list">
+            <div class="iconWithText">
+              <img src="/assets/arcticons_element.svg">
+              <a href="">Elements</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/bxs_school.svg">
+              <a href="">Scc Kit</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/ic_baseline-reddit.svg">
+              <a href="">KaIt Reddit</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/material-symbols_movie.svg">
+              <a href="">AFK</a>
+            </div>
+          </div>
+        </div>
 
-      window.onload = () => {
-        // Set up the clock
+      </div>
+      <div class="item">
+        <h1>Privat</h1>
+        <div class="row2">
+          <div class="left list">
+            <div class="iconWithText">
+              <img src="/assets/mdi_netflix.svg">
+              <a href="">Netflix</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/arcticons_amazon-prime-video.svg">
+              <a href="">Amazon Video</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/carbon_logo-youtube.svg">
+              <a href="">Youtube</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/arcticons_youtube-music.svg">
+              <a href="">Youtube Musik</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/arcticons_heise-online.svg">
+              <a href="">Heise</a>
+            </div>
+          </div>
+          <div class="right list">
+            <div class="iconWithText">
+              <img src="/assets/material-symbols_screen-search-desktop-outline.svg">
+              <a href="">Google</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/fluent-mdl2_website.svg">
+              <a href="">SV Website</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/ic_outline-logo-dev.svg">
+              <a href="">Dev</a>
+            </div>
+            <div class="iconWithText">
+              <img src="/assets/material-symbols_piano.svg">
+              <a href="">Noten</a>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  </div>
+
+  <script>
+    function getTime() {
+      let date = new Date(),
+        min = date.getMinutes(),
+        sec = date.getSeconds(),
+        hour = date.getHours();
+
+      return (
+        "" +
+        (hour < 10 ? "0" + hour : hour) +
+        ":" +
+        (min < 10 ? "0" + min : min) +
+        ":" +
+        (sec < 10 ? "0" + sec : sec)
+      );
+    }
+
+    window.onload = () => {
+      // Set up the clock
+      document.getElementById("clock").innerHTML = getTime();
+
+      // Set clock interval to tick clock
+      setInterval(() => {
         document.getElementById("clock").innerHTML = getTime();
-        document.getElementById("search").autofocus;
+      }, 100);
+    };
+  </script>
+</body>
 
-        // Set clock interval to tick clock
-        setInterval(() => {
-          document.getElementById("clock").innerHTML = getTime();
-        }, 100);
-      };
-    </script>
-  </body>
 </html>
