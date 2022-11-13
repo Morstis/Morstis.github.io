@@ -124,6 +124,8 @@ a {
   color: #89b4fa;
 }
 
-/* section {
-  grid-template-columns: 1fr;
-} */
+@media screen and (min-width: 2300px) {
+  body {
+    zoom: 1.3;
+  }
+}
