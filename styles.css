@@ -3,7 +3,7 @@ html {
   width: 100%;
 }
 body {
-  background-image: url("assets/cat-waves\ 1.png");
+  /*background-image: url("assets/cat-waves\ 1.png");*/
   background-size: cover;
   margin: 0;
   box-sizing: border-box;
